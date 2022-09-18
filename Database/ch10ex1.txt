@@ -1,0 +1,4 @@
+curl -X PUT http://localhost:5984/testbase
+curl -X GET http://localhost:5984/_all_dbs
+curl -X DELETE http://localhost:5984/testbase
+curl -X GET http://localhost:5984/_all_dbs

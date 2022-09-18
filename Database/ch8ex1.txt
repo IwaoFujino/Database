@@ -1,0 +1,11 @@
+use testbase
+show dbs
+db.createCollection("memberlist")
+db.memberlist.insert({name:"山田太郎", age:21})
+db.memberlist.insert({name:"田中花子", age:20})
+show dbs
+show collections
+db.memberlist.drop()
+show collections
+db.dropDatabase()
+show dbs

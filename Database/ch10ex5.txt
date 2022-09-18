@@ -1,0 +1,3 @@
+function (doc) {
+  emit(doc.学生証番号,[doc.氏名, doc.郵便番号, doc.住所]);
+}

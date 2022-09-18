@@ -1,0 +1,11 @@
+function (doc) {
+  var scoresum=0;
+  var scorecnt=0;
+  for(key in doc.成績表)
+  {
+    scoresum+=doc.成績表[key];
+    scorecnt+=1;
+  }
+  var scoreave=scoresum/scorecnt;
+  emit(doc.氏名, scoreave);
+}

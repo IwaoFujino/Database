@@ -1,0 +1,18 @@
+use testbase;
+db.createCollection("memberlist")
+db.memberlist.insert({名前:"東海太郎", 性別:"男", 年齢:22});
+db.memberlist.insert({名前:"高輪美奈子", 性別:"女", 年齢:20});
+db.memberlist.insert({名前:"品川次郎", 住所:"東京都港区高輪9-99-999", 電話番号:"88-8888-8888"})
+show dbs
+show collections
+db.memberlist.count()
+db.memberlist.find()
+db.memberlist.update({名前:"品川次郎"},{$set:{電話番号:"77-7777-7777"}})
+db.memberlist.find()
+db.memberlist.update({名前:"品川次郎"},{$set:{携帯番号:"99-9999-9999"}})
+db.memberlist.find()
+db.memberlist.remove({name:"東海太郎"})
+db.memberlist.find()
+db.memberlist.drop()
+db.dropDatabase()
+show dbs

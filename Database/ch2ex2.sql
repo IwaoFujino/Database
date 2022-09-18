@@ -1,0 +1,12 @@
+SHOW databases;
+CREATE DATABASE testbase;
+SHOW databases;
+USE testbase;
+SHOW tables;
+CREATE TABLE testtable(name CHAR(20), age INT);
+SHOW tables;
+SHOW FIELDS FROM testtable;
+DROP TABLE testtable;
+SHOW tables;
+DROP DATABASE testbase;
+SHOW databases;

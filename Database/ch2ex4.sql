@@ -1,0 +1,12 @@
+USE testbase;
+SHOW tables;
+SHOW fields FROM memberlist;
+INSERT INTO memberlist VALUES ('田中花子','女',28);
+INSERT INTO memberlist VALUES ('山田聡','男',32);
+INSERT INTO memberlist VALUES ('佐藤美那子','女',21);
+INSERT INTO memberlist VALUES ('鈴木博','男',25);
+SELECT * FROM memberlist;
+SELECT * FROM memberlist WHERE name='田中花子';
+SELECT age FROM memberlist WHERE name<>'田中花子';
+SELECT * FROM memberlist WHERE age>=25;
+SELECT name FROM memberlist WHERE age<=28;

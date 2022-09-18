@@ -1,0 +1,12 @@
+CREATE DATABASE testbase;
+SHOW databases;
+USE testbase;
+SHOW tables;
+CREATE TABLE memberlist (name CHAR(20), gender CHAR(10), age INT);
+SHOW tables;
+SHOW fields FROM memberlist;
+INSERT INTO memberlist VALUES ('田中花子', '女', 28);
+INSERT INTO memberlist VALUES ('山田聡', '男', 32);
+SELECT * FROM memberlist;
+DELETE FROM memberlist;
+SELECT * FROM memberlist;
